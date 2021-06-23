@@ -117,7 +117,7 @@ I'm still a newbie in Github but hopefully this README.md is readable and unders
 
 20. What kind of data is being sent from this request body?
 
-  *  
+  *  Login
 
 
 #### HTTP Response 
@@ -136,43 +136,65 @@ I'm still a newbie in Github but hopefully this README.md is readable and unders
     X-XSS-Protection: 1; mode=block
 
     [page content]
-21. What is the response status code?
+21. What is the response status code? 
 
+   * 200
 
 22. What web server is handling this HTTP response?
 
+   * Apache
 
 23. Does this response have a user session associated to it?
 
+   * Yes, the SessionID=5
 
 24. What kind of content is likely to be in the [page content] response body?
 
+   * Text code
+
 
 25. If your class covered security headers, what security request headers have been included?
+
+   * XSS protection or Strict Transport Security 
 
 ### Monoliths and Microservices 
 
 26. What are the individual components of microservices called?
 
+   * Services 
+
 
 27. What is a service that writes to a database and communicates to other services?
 
+   * API services 
 
 28. What type of underlying technology allows for microservices to become scalable and have redundancy?
+
+   * Containers & load balancer
 
 ### Deploying and Testing a Container Set
 
 29. What tool can be used to deploy multiple containers at once?
 
+   * Docker
+
 30. What kind of file format is required for us to deploy a container set?
+
+   * .yml files 
 
 ### Databases 
 
 31. Which type of SQL query would we use to see all of the information within a table called customers?
 
+   * SELECT column_name FROM customers
+
 32. Which type of SQL query would we use to enter new data into a table? (You don't need a full query, just the first part of the statement.)
 
+   * INSERT INTO table_name (column1, etc.) VALUES (value1, etc.); 
+
 33. Why would we never run DELETE FROM <table-name>; by itself?
+
+   * It deletes the entire table since it does not have the select statement.  
 
 No bonus this time :(
   
